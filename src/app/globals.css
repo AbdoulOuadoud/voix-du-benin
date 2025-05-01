@@ -1,8 +1,31 @@
 @import "tailwindcss";
 
 :root {
+  /* Palette de couleurs béninoise */
+  --vert-beninois: #007847;
+  --jaune-sable: #FFD700;
+  --rouge-terre: #D62828;
+  --texte-principal: #1A1A1A;
+  --texte-secondaire: #4A4A4A;
+  
+  /* Couleurs principales */
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: var(--texte-principal);
+  
+  /* Couleurs de fond alternatives */
+  --bg-primary: var(--vert-beninois);
+  --bg-secondary: var(--jaune-sable);
+  --bg-danger: var(--rouge-terre);
+  
+  /* Couleurs de texte et accents */
+  --text-primary: var(--texte-principal);
+  --text-secondary: var(--texte-secondaire);
+  --text-light: #FFFFFF;
+  
+  /* Couleurs de bordure */
+  --border-primary: var(--vert-beninois);
+  --border-secondary: var(--jaune-sable);
+  --border-danger: var(--rouge-terre);
 }
 
 @theme inline {
@@ -14,8 +37,10 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ededed;
+    --foreground: #0a0a0a;
+    --texte-secondaire: #0a0a0a;
+    /* Les couleurs principales restent les mêmes dans le thème sombre */
   }
 }
 
@@ -23,4 +48,119 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styles de transition par défaut */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Styles de boutons basés sur la palette béninoise */
+.btn-primary {
+  background-color: var(--vert-beninois);
+  color: var(--text-light);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: rgba(0, 120, 71, 0.9); /* --vert-beninois avec opacité */
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary {
+  background-color: var(--jaune-sable);
+  color: var(--texte-principal);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 215, 0, 0.9); /* --jaune-sable avec opacité */
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--vert-beninois);
+  color: var(--vert-beninois);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: rgba(0, 120, 71, 0.1);
+  transform: translateY(-2px);
+}
+
+.btn-danger {
+  background-color: var(--rouge-terre);
+  color: var(--text-light);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+  background-color: rgba(214, 40, 40, 0.9); /* --rouge-terre avec opacité */
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Classes utilitaires pour les couleurs de texte */
+.text-primary {
+  color: var(--texte-principal);
+}
+
+.text-secondary {
+  color: var(--texte-secondaire);
+}
+
+.text-vert-beninois {
+  color: var(--vert-beninois);
+}
+
+.text-jaune-sable {
+  color: var(--jaune-sable);
+}
+
+.text-rouge-terre {
+  color: var(--rouge-terre);
+}
+
+/* Classes utilitaires pour les couleurs de fond */
+.bg-vert-beninois {
+  background-color: var(--vert-beninois);
+}
+
+.bg-jaune-sable {
+  background-color: var(--jaune-sable);
+}
+
+.bg-rouge-terre {
+  background-color: var(--rouge-terre);
+}
+
+/* Classes utilitaires pour les bordures */
+.border-vert-beninois {
+  border-color: var(--vert-beninois);
+}
+
+.border-jaune-sable {
+  border-color: var(--jaune-sable);
+}
+
+.border-rouge-terre {
+  border-color: var(--rouge-terre);
 }
