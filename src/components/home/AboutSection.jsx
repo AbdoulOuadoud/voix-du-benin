@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import { Mic, Globe, Users, BookOpen } from 'lucide-react';
 
 export default function AboutSection() {

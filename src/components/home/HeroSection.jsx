@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import Button from '../ui/Button';
-import Image from 'next/image';
 import { User, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import BeninMap from '../ui/BeninMap';
