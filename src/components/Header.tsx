@@ -32,7 +32,7 @@ export default function Header() {
                         Contribuer
                     </Link>
                     <Button href="/inscription" variant="primary">
-                        S'inscrire
+                        S&apos;inscrire
                     </Button>
                 </nav>
 
@@ -83,7 +83,7 @@ export default function Header() {
                         className="mt-4 w-full"
                         onClick={toggleMenu}
                     >
-                        S'inscrire
+                        S&apos;inscrire
                     </Button>
                 </motion.div>
             )}
