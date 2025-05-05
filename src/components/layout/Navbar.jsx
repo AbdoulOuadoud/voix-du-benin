@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Globe, Search } from 'lucide-react';
+import { Menu, X, Globe } from 'lucide-react';
 import Button from '../ui/Button';
 
 export default function Navbar() {
@@ -81,11 +81,7 @@ export default function Navbar() {
                         </Link>
                     </div>
                     
-                    <button className="p-2 rounded-full bg-white/50 hover:bg-white/80 transition-colors">
-                        <Search size={18} className="text-texte-secondaire" />
-                    </button>
-                    
-                    <div className="ml-2 flex gap-3">
+                    <div className="flex gap-3">
                         <Button href="/auth/login" variant="outline" size="sm">
                             Connexion
                         </Button>
@@ -96,11 +92,7 @@ export default function Navbar() {
                 </nav>
 
                 {/* Menu mobile */}
-                <div className="md:hidden flex items-center gap-3">
-                    <button className="p-2 rounded-full bg-white/50 hover:bg-white/80 transition-colors">
-                        <Search size={18} className="text-texte-secondaire" />
-                    </button>
-                    
+                <div className="md:hidden flex items-center">
                     <button
                         onClick={toggleMenu}
                         className={`p-2 rounded-full transition-colors ${isMenuOpen ? 'bg-rouge-terre text-white' : 'bg-white/50 text-texte-secondaire hover:bg-white/80'}`}
@@ -109,76 +101,65 @@ export default function Navbar() {
                         {isMenuOpen ? <X size={18} /> : <Menu size={18} />}
                     </button>
                 </div>
+
             </div>
 
-            {/* Menu mobile overlay */}
+            {/* Menu mobile avec animation */}
             <AnimatePresence>
                 {isMenuOpen && (
-                    <motion.div
-                        className="fixed inset-0 z-40 p-6 pt-20 md:hidden flex flex-col"
-                        initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -20 }}
-                        transition={{ duration: 0.3 }}
-                        style={{
-                            background: `rgba(255, 255, 255, 0.85)`,
-                            backdropFilter: `blur(12px)`,
-                            WebkitBackdropFilter: `blur(12px)`
-                        }}
+                    <motion.div 
+                        className="md:hidden absolute top-full left-0 right-0 mt-2 mx-4 p-5 rounded-2xl bg-white shadow-lg"
+                        initial={{ opacity: 0, y: -20, height: 0 }}
+                        animate={{ opacity: 1, y: 0, height: 'auto' }}
+                        exit={{ opacity: 0, y: -20, height: 0 }}
+                        transition={{ duration: 0.3, ease: "easeInOut" }}
                     >
-                        <div className="flex-1 flex flex-col items-center gap-6">
-                            {/* Liens de navigation */}
-                            <div className="w-full flex flex-col gap-2">
-                                <Link
-                                    href="/languages"
-                                    className="w-full py-3 px-4 rounded-xl bg-white/60 text-center text-lg font-medium text-texte-principal hover:bg-vert-beninois/10 transition-colors"
-                                    onClick={toggleMenu}
+                        <nav className="flex flex-col gap-4">
+                            <Link 
+                                href="/languages"
+                                className="px-4 py-3 text-texte-principal font-medium rounded-xl hover:bg-vert-beninois/10 transition-colors"
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                Langues
+                            </Link>
+                            <Link 
+                                href="/about"
+                                className="px-4 py-3 text-texte-principal font-medium rounded-xl hover:bg-vert-beninois/10 transition-colors"
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                À propos
+                            </Link>
+                            <Link 
+                                href="/contribute"
+                                className="px-4 py-3 text-texte-principal font-medium rounded-xl hover:bg-vert-beninois/10 transition-colors"
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                Contribuer
+                            </Link>
+                            
+                            <hr className="border-gray-100 my-2" />
+                            
+                            <div className="flex flex-col gap-3 pt-2">
+                                <Button 
+                                    href="/auth/login" 
+                                    variant="outline" 
+                                    size="sm"
+                                    className="w-full justify-center"
+                                    onClick={() => setIsMenuOpen(false)}
                                 >
-                                    Langues
-                                </Link>
-                                <Link
-                                    href="/about"
-                                    className="w-full py-3 px-4 rounded-xl bg-white/60 text-center text-lg font-medium text-texte-principal hover:bg-vert-beninois/10 transition-colors"
-                                    onClick={toggleMenu}
+                                    Connexion
+                                </Button>
+                                <Button 
+                                    href="/auth/sign-up" 
+                                    variant="primary" 
+                                    size="sm"
+                                    className="w-full justify-center"
+                                    onClick={() => setIsMenuOpen(false)}
                                 >
-                                    À propos
-                                </Link>
-                                <Link
-                                    href="/contribute"
-                                    className="w-full py-3 px-4 rounded-xl bg-white/60 text-center text-lg font-medium text-texte-principal hover:bg-vert-beninois/10 transition-colors"
-                                    onClick={toggleMenu}
-                                >
-                                    Contribuer
-                                </Link>
-                                <Link
-                                    href="/faq"
-                                    className="w-full py-3 px-4 rounded-xl bg-white/60 text-center text-lg font-medium text-texte-principal hover:bg-vert-beninois/10 transition-colors"
-                                    onClick={toggleMenu}
-                                >
-                                    FAQ
-                                </Link>
+                                    S'inscrire
+                                </Button>
                             </div>
-                        </div>
-                        
-                        {/* Boutons d'action */}
-                        <div className="w-full grid grid-cols-2 gap-3 mt-6">
-                            <Button
-                                href="/auth/login"
-                                variant="outline"
-                                onClick={toggleMenu}
-                                className="w-full"
-                            >
-                                Connexion
-                            </Button>
-                            <Button
-                                href="/auth/sign-up"
-                                variant="primary"
-                                onClick={toggleMenu}
-                                className="w-full"
-                            >
-                                S'inscrire
-                            </Button>
-                        </div>
+                        </nav>
                     </motion.div>
                 )}
             </AnimatePresence>

@@ -52,10 +52,10 @@ export default function HeroSection() {
 
                         <div className="flex flex-wrap gap-4 mb-8">
                             <Button href="/languages" variant="primary" size="large">
-                                Découvrir les langues
+                                Contribuer dès maintenant
                             </Button>
                             <Button href="/contribute" variant="outline" size="large">
-                                Contribuer
+                                Contribuer anonymement
                             </Button>
                         </div>
                         
@@ -107,22 +107,26 @@ export default function HeroSection() {
                         </motion.div>
 
                         <div className="flex items-center text-sm text-text-secondary">
-                            <div className="flex -space-x-3 mr-4">
+                            <div className="flex items-center relative mr-4">
                                 {[
-                                    { color: 'bg-vert-beninois', icon: false },
-                                    { color: 'bg-jaune-sable', icon: true },
-                                    { color: 'bg-rouge-terre', icon: false },
-                                    { color: 'bg-vert-beninois/80', icon: true }
+                                    { color: 'bg-vert-beninois', icon: false, offset: '0' },
+                                    { color: 'bg-jaune-sable', icon: true, offset: '-0.75rem' },
+                                    { color: 'bg-rouge-terre', icon: false, offset: '-1.5rem' },
+                                    { color: 'bg-vert-beninois/80', icon: true, offset: '-2.25rem' }
                                 ].map((item, i) => (
                                     <div 
                                         key={i} 
-                                        className={`w-8 h-8 rounded-full border-2 border-white flex items-center justify-center ${item.color}`}
-                                        style={{ boxShadow: '0 0 0 2px rgba(255, 255, 255, 0.8)' }}
+                                        className={`w-9 h-9 rounded-full border-2 border-white flex items-center justify-center ${item.color} absolute transform transition-all duration-200 hover:scale-110 hover:z-10`}
+                                        style={{ 
+                                            boxShadow: '0 0 0 2px rgba(255, 255, 255, 0.8)',
+                                            left: item.offset,
+                                            zIndex: 5 - i
+                                        }}
                                     >
-                                        {item.icon && <User size={14} className="text-white" />}
+                                        {item.icon && <User size={15} className="text-white" />}
                                     </div>
                                 ))}
-                                <div className="w-8 h-8 rounded-full bg-white border-2 border-vert-beninois flex items-center justify-center text-xs font-semibold text-vert-beninois">
+                                <div className="w-9 h-9 rounded-full bg-white border-2 border-vert-beninois flex items-center justify-center text-xs font-semibold text-vert-beninois ml-12 transition-transform duration-200 hover:scale-110" style={{ boxShadow: '0 2px 6px rgba(0, 0, 0, 0.1)' }}>
                                     +496
                                 </div>
                             </div>
@@ -172,7 +176,7 @@ export default function HeroSection() {
                                     <div 
                                         className="relative p-[2px] w-full h-full rounded-2xl overflow-hidden shadow-lg"
                                     >
-                                        <div className="relative w-full h-full bg-white rounded-2xl overflow-hidden">
+                                        <div className="relative w-full h-full bg-white rounded-2xl overflow-hidden py-8">
                                             <BeninMap 
                                                 onRegionClick={handleRegionClick}
                                                 highlightedRegion={selectedRegion?.id}
