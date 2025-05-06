@@ -58,22 +58,22 @@ export default function Footer() {
                         <h3 className="font-semibold text-texte-principal mb-4">Explorer</h3>
                         <ul className="space-y-2">
                             <li>
-                                <Link href="/languages" className="text-texte-secondaire hover:text-vert-beninois transition-colors">
-                                    Langues
+                                <Link href="/#mission" className="text-texte-secondaire hover:text-vert-beninois transition-colors">
+                                    Notre Mission
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/contribute" className="text-texte-secondaire hover:text-vert-beninois transition-colors">
-                                    Contribuer
+                                <Link href="/#features" className="text-texte-secondaire hover:text-vert-beninois transition-colors">
+                                    Fonctionnalités
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/about" className="text-texte-secondaire hover:text-vert-beninois transition-colors">
-                                    À propos
+                                <Link href="/#support" className="text-texte-secondaire hover:text-vert-beninois transition-colors">
+                                    Soutenez-nous
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/faq" className="text-texte-secondaire hover:text-vert-beninois transition-colors">
+                                <Link href="/#faq" className="text-texte-secondaire hover:text-vert-beninois transition-colors">
                                     FAQ
                                 </Link>
                             </li>
@@ -85,23 +85,18 @@ export default function Footer() {
                         <h3 className="font-semibold text-texte-principal mb-4">Support</h3>
                         <ul className="space-y-2">
                             <li>
-                                <Link href="/support" className="text-texte-secondaire hover:text-vert-beninois transition-colors">
-                                    Contact
-                                </Link>
-                            </li>
-                            <li>
                                 <Link href="/privacy-policy" className="text-texte-secondaire hover:text-vert-beninois transition-colors">
                                     Confidentialité
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/support" className="text-texte-secondaire hover:text-vert-beninois transition-colors">
+                                <Link href="/legal" className="text-texte-secondaire hover:text-vert-beninois transition-colors">
                                     Mentions légales
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/support" className="text-texte-secondaire hover:text-vert-beninois transition-colors">
-                                    Soutenir le projet
+                                <Link href="/terms-of-service" className="text-texte-secondaire hover:text-vert-beninois transition-colors">
+                                    Conditions d'utilisation
                                 </Link>
                             </li>
                         </ul>

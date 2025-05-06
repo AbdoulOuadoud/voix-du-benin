@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   /* Palette de couleurs béninoise */
   --vert-beninois: #007847;

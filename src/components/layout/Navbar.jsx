@@ -68,12 +68,6 @@ export default function Navbar() {
                             Langues
                         </Link>
                         <Link 
-                            href="/about" 
-                            className="px-4 py-1.5 rounded-full text-texte-secondaire hover:text-vert-beninois hover:bg-white hover:shadow-sm transition-all"
-                        >
-                            À propos
-                        </Link>
-                        <Link 
                             href="/contribute" 
                             className="px-4 py-1.5 rounded-full text-texte-secondaire hover:text-vert-beninois hover:bg-white hover:shadow-sm transition-all"
                         >
@@ -108,38 +102,31 @@ export default function Navbar() {
             <AnimatePresence>
                 {isMenuOpen && (
                     <motion.div 
-                        className="md:hidden absolute top-full left-0 right-0 mt-2 mx-4 p-5 rounded-2xl bg-white shadow-lg"
+                        className="md:hidden absolute top-full left-0 right-0 mt-2 mx-4 p-4 rounded-xl bg-white shadow-md"
                         initial={{ opacity: 0, y: -20, height: 0 }}
                         animate={{ opacity: 1, y: 0, height: 'auto' }}
                         exit={{ opacity: 0, y: -20, height: 0 }}
-                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                        transition={{ duration: 0.2, ease: "easeInOut" }}
                     >
-                        <nav className="flex flex-col gap-4">
+                        <nav className="flex flex-col">
                             <Link 
                                 href="/languages"
-                                className="px-4 py-3 text-texte-principal font-medium rounded-xl hover:bg-vert-beninois/10 transition-colors"
+                                className="px-3 py-2.5 text-texte-principal font-medium hover:bg-gray-50 transition-colors"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Langues
                             </Link>
                             <Link 
-                                href="/about"
-                                className="px-4 py-3 text-texte-principal font-medium rounded-xl hover:bg-vert-beninois/10 transition-colors"
-                                onClick={() => setIsMenuOpen(false)}
-                            >
-                                À propos
-                            </Link>
-                            <Link 
                                 href="/contribute"
-                                className="px-4 py-3 text-texte-principal font-medium rounded-xl hover:bg-vert-beninois/10 transition-colors"
+                                className="px-3 py-2.5 text-texte-principal font-medium hover:bg-gray-50 transition-colors"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Contribuer
                             </Link>
                             
-                            <hr className="border-gray-100 my-2" />
+                            <hr className="border-gray-100 my-1.5" />
                             
-                            <div className="flex flex-col gap-3 pt-2">
+                            <div className="flex flex-col gap-2 pt-1.5">
                                 <Button 
                                     href="/auth/login" 
                                     variant="outline" 

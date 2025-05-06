@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { Mic, Globe, Users, BookOpen } from 'lucide-react';
+import { Mic, Globe, Users, BookOpen, ChevronRight } from 'lucide-react';
 
 export default function AboutSection() {
     const features = [
@@ -41,9 +41,23 @@ export default function AboutSection() {
         })
     };
 
+    const slideIn = {
+        hidden: { opacity: 0, x: -30 },
+        visible: (i = 0) => ({
+            opacity: 1,
+            x: 0,
+            transition: {
+                duration: 0.5,
+                delay: i * 0.15,
+                ease: [0.25, 0.1, 0.25, 1]
+            }
+        })
+    };
+
     return (
-        <section id="about" className="py-28 bg-slate-50">
+        <section id="mission" className="py-20 bg-gradient-to-b from-slate-50 to-white">
             <div className="container mx-auto px-4 max-w-6xl">
+                {/* En-tête de section */}
                 <motion.div 
                     className="mb-16 max-w-3xl mx-auto text-center"
                     initial="hidden"
@@ -51,8 +65,11 @@ export default function AboutSection() {
                     viewport={{ once: true }}
                     variants={fadeIn}
                 >
+                    <div className="inline-block mb-3 bg-green-100 text-benin-green px-4 py-1 rounded-full text-sm font-medium">
+                        Notre Mission
+                    </div>
                     <h2 className="text-3xl md:text-4xl font-bold mb-6 text-slate-800 tracking-tight">
-                        Notre mission pour le <span className="text-benin-green">patrimoine linguistique</span> béninois
+                        Préservation du <span className="text-benin-green">patrimoine linguistique</span> béninois
                     </h2>
                     <p className="text-slate-600 text-lg leading-relaxed">
                         Voix du Bénin préserve et valorise les langues de notre territoire, 
@@ -60,65 +77,78 @@ export default function AboutSection() {
                     </p>
                 </motion.div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 items-center">
-                    {/* Image avec style moderne */}
-                    <motion.div 
-                        className="lg:col-span-2 relative rounded-xl overflow-hidden aspect-[4/3] shadow-lg"
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true }}
-                        variants={fadeIn}
-                        custom={0.5}
-                    >
-                        <div className="absolute inset-0 bg-gradient-radial from-benin-yellow via-benin-green to-blue-600 flex items-center justify-center">
-                            <div className="absolute inset-0 bg-[url('/beninLow.svg')] bg-center bg-no-repeat bg-contain opacity-20 mix-blend-overlay"></div>
-                            <div className="relative z-10 bg-white/15 backdrop-blur-sm rounded-xl p-6 m-5 border-2 border-white/30 shadow-inner before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-r before:from-benin-yellow/30 before:to-benin-green/30 before:rounded-xl before:z-[-1]">
-                                <p className="text-slate-800 text-2xl font-medium leading-relaxed text-center drop-shadow-md bg-white/80 py-2 px-3 rounded-lg">
-                                    Plus de <span className="font-bold text-3xl relative inline-block">
-                                        <span className="absolute -inset-1 blur-sm bg-yellow-300 rounded-full opacity-70"></span>
-                                        <span className="relative text-benin-green">50</span>
-                                    </span> <span className="text-slate-800">langues à préserver et célébrer</span>
-                                </p>
-                                <div className="w-24 h-1 bg-gradient-to-r from-benin-yellow to-benin-green mx-auto mt-4 rounded-full"></div>
-                            </div>
-                        </div>
-                    </motion.div>
+                {/* Statistique clé */}
+                <motion.div 
+                    className="text-center mb-16"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    variants={fadeIn}
+                    custom={0.3}
+                >
+                    <div className="bg-white shadow-xl rounded-2xl py-6 px-8 max-w-md mx-auto border border-slate-100">
+                        <span className="text-6xl font-bold text-benin-green">50+</span>
+                        <p className="text-slate-700 text-lg mt-2">Langues béninoises à préserver et célébrer</p>
+                        <div className="h-1 w-24 bg-gradient-to-r from-benin-yellow to-benin-green mx-auto mt-4 rounded-full"></div>
+                    </div>
+                </motion.div>
 
-                    {/* Texte et caractéristiques */}
-                    <div className="lg:col-span-3 space-y-8">
-                        <motion.p 
-                            className="text-slate-600 text-lg leading-relaxed"
+                {/* Problématique et solution */}
+                <motion.div 
+                    className="mb-16 bg-white p-8 rounded-xl shadow-sm border border-slate-100"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    variants={fadeIn}
+                    custom={0.5}
+                >
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div className="space-y-4">
+                            <h3 className="text-xl font-semibold text-slate-800">Le défi actuel</h3>
+                            <p className="text-slate-600">
+                                Face à la mondialisation, de nombreuses langues béninoises sont menacées d'extinction. 
+                                Cette richesse culturelle unique risque de disparaître sans documentation adéquate.
+                            </p>
+                        </div>
+                        <div className="space-y-4">
+                            <h3 className="text-xl font-semibold text-slate-800">Notre approche</h3>
+                            <p className="text-slate-600">
+                                Notre plateforme numérique permet de documenter et rendre accessibles ces 
+                                trésors linguistiques pour les générations actuelles et futures.
+                            </p>
+                            <a href="#contact" className="inline-flex items-center text-benin-green hover:text-benin-yellow transition-colors font-medium">
+                                Rejoignez notre initiative <ChevronRight className="w-4 h-4 ml-1" />
+                            </a>
+                        </div>
+                    </div>
+                </motion.div>
+
+                {/* Caractéristiques */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                    {features.map((feature, index) => (
+                        <motion.div 
+                            key={index}
+                            className="group"
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true }}
-                            variants={fadeIn}
-                            custom={0.7}
+                            variants={slideIn}
+                            custom={index * 0.2}
                         >
-                            Face à la mondialisation, de nombreuses langues béninoises sont menacées. 
-                            Notre plateforme numérique permet de documenter et rendre accessibles ces 
-                            trésors linguistiques pour les générations actuelles et futures.
-                        </motion.p>
-                        
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                            {features.map((feature, index) => (
-                                <motion.div 
-                                    key={index}
-                                    className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-slate-100"
-                                    initial="hidden"
-                                    whileInView="visible"
-                                    viewport={{ once: true }}
-                                    variants={fadeIn}
-                                    custom={0.9 + index * 0.1}
-                                >
-                                    <div className="bg-green-50 w-12 h-12 rounded-full flex items-center justify-center mb-4">
-                                        {feature.icon}
-                                    </div>
-                                    <h3 className="font-semibold text-slate-800 mb-2">{feature.title}</h3>
-                                    <p className="text-slate-600">{feature.description}</p>
-                                </motion.div>
-                            ))}
-                        </div>
-                    </div>
+                            <div className="bg-white p-8 rounded-xl shadow-md h-full flex flex-col hover:shadow-lg transform hover:-translate-y-1 transition-all overflow-hidden relative border-2 border-transparent hover:border-transparent" 
+                                style={{
+                                    backgroundOrigin: 'border-box',
+                                    backgroundClip: 'padding-box, border-box',
+                                    backgroundImage: 'linear-gradient(white, white), linear-gradient(to right, #008751, #FCD116, #CE1126)'
+                                }}>
+                                <div className="mb-5 p-3 bg-green-50 w-14 h-14 rounded-full flex items-center justify-center">
+                                    {feature.icon}
+                                </div>
+                                <h3 className="font-semibold text-slate-800 mb-3 text-lg">{feature.title}</h3>
+                                <p className="text-slate-600">{feature.description}</p>
+                            </div>
+                        </motion.div>
+                    ))}
                 </div>
             </div>
         </section>

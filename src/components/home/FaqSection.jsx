@@ -35,7 +35,7 @@ export default function FaqSection() {
     };
 
     return (
-        <section className="py-24 bg-gradient-to-b from-white to-gray-50">
+        <section id="faq" className="py-24 bg-gradient-to-b from-white to-gray-50">
             <div className="container mx-auto px-6">
                 <motion.div 
                     className="text-center mb-16"

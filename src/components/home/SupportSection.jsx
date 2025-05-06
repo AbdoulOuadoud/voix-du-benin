@@ -37,7 +37,7 @@ export default function SupportSection() {
     ];
 
     return (
-        <section className="py-24 bg-gray-50">
+        <section id="support" className="py-24 bg-gray-50">
             <div className="container mx-auto px-6">
                 <motion.div 
                     className="text-center mb-16"
