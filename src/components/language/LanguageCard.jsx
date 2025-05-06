@@ -21,7 +21,7 @@ export default function LanguageCard({
     } = language;
 
     // Couleur d&apos;accent par défaut si non fournie
-    const accentColor = colorAccent || 'bg-benin-green';
+    const accentColor = colorAccent || 'bg-vert-beninois ';
 
     return (
         <Link href={`/languages/${id}`} className="block">

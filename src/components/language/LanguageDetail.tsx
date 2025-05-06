@@ -3,14 +3,41 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import Link from 'next/link';
-import { Users, Mic, MapPin, Clock, Search, SortAsc, Filter, ArrowUpRight } from 'lucide-react';
+import { Users, Mic, MapPin, Clock, Search, SortAsc, Filter, ArrowUpRight, MessageCircleReply } from 'lucide-react';
 import Button from '../ui/Button';
 import Input from '../ui/Input';
 import Select from '../ui/Select';
 import AudioPlayer from '../audio/AudioPlayer';
+import React, { ChangeEvent } from 'react';
 
-export default function LanguageDetail({ language, recordings = [], isLoading = false }) {
+// Définition des interfaces
+interface Language {
+    id: string;
+    name: string;
+    speakersCount: number;
+    region: string;
+    coverImageUrl: string;
+    description: string;
+}
+
+interface Recording {
+    id: string;
+    phrase: string;
+    translation: string;
+    phoneticTranscription: string;
+    type: string;
+    audioUrl: string;
+    createdAt: string;
+    plays: number;
+}
+
+interface LanguageDetailProps {
+    language: Language;
+    recordings?: Recording[];
+    isLoading?: boolean;
+}
+
+export default function LanguageDetail({ language, recordings = [], isLoading = false }: LanguageDetailProps) {
     const [searchTerm, setSearchTerm] = useState('');
     const [sortBy, setSortBy] = useState('recent');
     const [filterType, setFilterType] = useState('all');
@@ -34,9 +61,9 @@ export default function LanguageDetail({ language, recordings = [], isLoading = 
             // Tri
             switch (sortBy) {
                 case 'recent':
-                    return new Date(b.createdAt) - new Date(a.createdAt);
+                    return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
                 case 'oldest':
-                    return new Date(a.createdAt) - new Date(b.createdAt);
+                    return new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime();
                 case 'alphabetical':
                     return a.phrase.localeCompare(b.phrase);
                 case 'popularity':
@@ -114,11 +141,14 @@ export default function LanguageDetail({ language, recordings = [], isLoading = 
                                 </p>
                             )}
                         </div>
-                        
-                        <div className="mt-4 md:mt-0">
+                        <div className='flex flex-col items-end gap-4'>
                             <Button href={`/contribute/${language.id}`} variant="primary">
                                 Contribuer dans cette langue
                                 <ArrowUpRight size={16} />
+                            </Button>
+                            <Button href={`/feedback/${language.id}`} variant="secondary">
+                                Laisser un retour
+                                <MessageCircleReply size={16} />
                             </Button>
                         </div>
                     </div>
@@ -127,7 +157,7 @@ export default function LanguageDetail({ language, recordings = [], isLoading = 
             
             {/* Onglets d&apos;information (optionnels) */}
             <div className="flex border-b border-gray-200 mb-6">
-                <button className="px-4 py-2 border-b-2 border-benin-green text-benin-green font-medium">
+                <button className="px-4 py-2 border-b-2 border-vert-beninois text-benin-green font-medium">
                     Enregistrements
                 </button>
                 <button className="px-4 py-2 text-text-secondary hover:text-benin-green transition-colors">
@@ -145,15 +175,14 @@ export default function LanguageDetail({ language, recordings = [], isLoading = 
                         id="search-recordings"
                         placeholder="Rechercher..."
                         value={searchTerm}
-                        onChange={(e) => setSearchTerm(e.target.value)}
+                        onChange={(e: ChangeEvent<HTMLInputElement>) => setSearchTerm(e.target.value)}
                         icon={<Search size={18} />}
-                        className="mb-0"
-                    />
+                        className="mb-0" label={undefined}                    />
                     
                     <Select
                         id="filter-type"
                         value={filterType}
-                        onChange={(e) => setFilterType(e.target.value)}
+                        onChange={(e: ChangeEvent<HTMLSelectElement>) => setFilterType(e.target.value)}
                         options={filterOptions}
                         icon={<Filter size={18} />}
                         className="mb-0"
@@ -162,7 +191,7 @@ export default function LanguageDetail({ language, recordings = [], isLoading = 
                     <Select
                         id="sort-by"
                         value={sortBy}
-                        onChange={(e) => setSortBy(e.target.value)}
+                        onChange={(e: ChangeEvent<HTMLSelectElement>) => setSortBy(e.target.value)}
                         options={sortOptions}
                         icon={<SortAsc size={18} />}
                         className="mb-0"
@@ -219,8 +248,10 @@ export default function LanguageDetail({ language, recordings = [], isLoading = 
                                         
                                         <div className="md:w-1/3 lg:w-1/4">
                                             <AudioPlayer 
-                                                audioUrl={recording.audioUrl}
-                                            />
+                                                audioUrl={recording.audioUrl} 
+                                                title={undefined} 
+                                                subtitle={undefined} 
+                                                onPlay={undefined}                                            />
                                         </div>
                                     </div>
                                 </div>
@@ -240,7 +271,7 @@ export default function LanguageDetail({ language, recordings = [], isLoading = 
             </div>
             
             {/* Appel à contribution */}
-            <div className="mt-12 bg-benin-green text-white p-8 rounded-2xl text-center">
+            <div className="mt-12 bg-vert-beninois  text-white p-8 rounded-2xl text-center">
                 <h3 className="text-2xl font-bold mb-3">
                     Contribuez à préserver la langue {language.name}
                 </h3>
@@ -251,7 +282,7 @@ export default function LanguageDetail({ language, recordings = [], isLoading = 
                 <Button 
                     href={`/contribute/${language.id}`} 
                     variant="secondary" 
-                    size="large"
+                    size="lg"
                 >
                     Faire un enregistrement
                 </Button>

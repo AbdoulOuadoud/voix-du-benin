@@ -19,17 +19,17 @@ export default function Button({
     const getVariantClasses = () => {
         switch (variant) {
             case 'primary':
-                return 'bg-benin-green text-white hover:bg-benin-green/90';
+                return 'bg-vert-beninois  text-white hover:bg-vert-beninois /90';
             case 'secondary':
                 return 'bg-benin-yellow text-text-primary hover:bg-benin-yellow/90';
             case 'accent':
                 return 'bg-benin-red text-white hover:bg-benin-red/90';
             case 'outline':
-                return 'bg-transparent border-2 border-benin-green text-benin-green hover:bg-benin-green/10';
+                return 'bg-transparent border-2 border-vert-beninois text-benin-green hover:bg-vert-beninois /10';
             case 'ghost':
-                return 'bg-transparent text-benin-green hover:bg-benin-green/10';
+                return 'bg-transparent text-benin-green hover:bg-vert-beninois /10';
             default:
-                return 'bg-benin-green text-white hover:bg-benin-green/90';
+                return 'bg-vert-beninois  text-white hover:bg-vert-beninois /90';
         }
     };
 

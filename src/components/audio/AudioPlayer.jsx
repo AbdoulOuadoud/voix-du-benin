@@ -141,7 +141,7 @@ export default function AudioPlayer({
             <div className="flex items-center gap-3 mb-3">
                 <button
                     onClick={togglePlay}
-                    className="w-10 h-10 rounded-full bg-benin-green text-white flex items-center justify-center hover:bg-benin-green/90 transition-colors"
+                    className="w-10 h-10 rounded-full bg-vert-beninois  text-white flex items-center justify-center hover:bg-vert-beninois /90 transition-colors"
                     aria-label={isPlaying ? "Pause" : "Lecture"}
                 >
                     {isPlaying ? <Pause size={18} /> : <Play size={18} className="ml-1" />}
@@ -158,10 +158,10 @@ export default function AudioPlayer({
                             max={duration || 0}
                             value={currentTime}
                             onChange={handleProgressChange}
-                            className="w-full h-1.5 bg-gray-200 rounded-full appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:bg-benin-green [&::-webkit-slider-thumb]:w-3 [&::-webkit-slider-thumb]:h-3 [&::-webkit-slider-thumb]:rounded-full"
+                            className="w-full h-1.5 bg-gray-200 rounded-full appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:bg-vert-beninois  [&::-webkit-slider-thumb]:w-3 [&::-webkit-slider-thumb]:h-3 [&::-webkit-slider-thumb]:rounded-full"
                         />
                         <div 
-                            className="absolute top-0 left-0 h-1.5 bg-benin-green rounded-full pointer-events-none" 
+                            className="absolute top-0 left-0 h-1.5 bg-vert-beninois  rounded-full pointer-events-none" 
                             style={{ width: `${(currentTime / duration) * 100}%` }}
                         />
                     </div>
@@ -188,7 +188,7 @@ export default function AudioPlayer({
                         step="0.01"
                         value={isMuted ? 0 : volume}
                         onChange={handleVolumeChange}
-                        className="w-20 h-1 bg-gray-200 rounded-full appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:bg-benin-green [&::-webkit-slider-thumb]:w-2 [&::-webkit-slider-thumb]:h-2 [&::-webkit-slider-thumb]:rounded-full"
+                        className="w-20 h-1 bg-gray-200 rounded-full appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:bg-vert-beninois  [&::-webkit-slider-thumb]:w-2 [&::-webkit-slider-thumb]:h-2 [&::-webkit-slider-thumb]:rounded-full"
                     />
                 </div>
                 

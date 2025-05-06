@@ -80,7 +80,7 @@ export default function Navbar() {
                             Connexion
                         </Button>
                         <Button href="/register" variant="primary" size="sm">
-                            s&apos;inscrire
+                            S&apos;inscrire
                         </Button>
                     </div>
                 </nav>
@@ -143,7 +143,7 @@ export default function Navbar() {
                                     className="w-full justify-center"
                                     onClick={() => setIsMenuOpen(false)}
                                 >
-                                    s&apos;inscrire
+                                    S&apos;inscrire
                                 </Button>
                             </div>
                         </nav>

@@ -148,7 +148,7 @@ export default function AudioRecorder({ onRecordingComplete }) {
                             {Array.from({ length: 20 }).map((_, i) => (
                                 <motion.div
                                     key={i}
-                                    className="w-1 bg-benin-green"
+                                    className="w-1 bg-vert-beninois "
                                     animate={{
                                         height: [20, Math.random() * 60 + 20, 20],
                                     }}

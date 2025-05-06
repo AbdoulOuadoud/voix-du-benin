@@ -67,13 +67,13 @@ export default function FaqSection() {
                         >
                             <button
                                 onClick={() => toggleItem(index)}
-                                className={`flex justify-between items-center w-full text-left p-6 rounded-xl ${activeIndex === index ? 'bg-benin-green/5' : ''}`}
+                                className={`flex justify-between items-center w-full text-left p-6 rounded-xl ${activeIndex === index ? 'bg-vert-beninois /5' : ''}`}
                             >
                                 <h3 className={`text-lg font-semibold ${activeIndex === index ? 'text-benin-green' : 'text-text-primary'}`}>
                                     {item.question}
                                 </h3>
                                 <div 
-                                    className={`flex items-center justify-center h-8 w-8 rounded-full bg-benin-green/10 transform transition-all duration-300 ${activeIndex === index ? 'rotate-180 bg-benin-green/20' : ''}`}
+                                    className={`flex items-center justify-center h-8 w-8 rounded-full bg-vert-beninois /10 transform transition-all duration-300 ${activeIndex === index ? 'rotate-180 bg-vert-beninois /20' : ''}`}
                                 >
                                     <ChevronDown className={`h-5 w-5 ${activeIndex === index ? 'text-benin-green' : 'text-benin-green/80'}`} />
                                 </div>

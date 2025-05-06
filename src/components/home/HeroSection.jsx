@@ -29,7 +29,7 @@ export default function HeroSection() {
         <section className="relative bg-gradient-to-b from-white to-gray-50 pb-16 pt-32 overflow-hidden">
             {/* Décoration d&apos;arrière-plan */}
             <div className="absolute inset-0 z-0 opacity-20">
-                <div className="absolute top-20 left-1/4 w-64 h-64 bg-benin-green rounded-full filter blur-[120px]" />
+                <div className="absolute top-20 left-1/4 w-64 h-64 bg-vert-beninois  rounded-full filter blur-[120px]" />
                 <div className="absolute bottom-10 right-1/3 w-72 h-72 bg-benin-yellow rounded-full filter blur-[120px]" />
             </div>
 

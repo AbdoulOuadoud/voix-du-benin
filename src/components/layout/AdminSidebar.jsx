@@ -101,7 +101,7 @@ export default function AdminSidebar() {
                                     href={item.href}
                                     className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${
                                         isActive(item.href)
-                                            ? 'bg-benin-green text-white'
+                                            ? 'bg-vert-beninois  text-white'
                                             : 'text-text-secondary hover:bg-gray-50 hover:text-text-primary'
                                     }`}
                                 >
@@ -156,7 +156,7 @@ export default function AdminSidebar() {
                                             href={item.href}
                                             className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${
                                                 isActive(item.href)
-                                                    ? 'bg-benin-green text-white'
+                                                    ? 'bg-vert-beninois  text-white'
                                                     : 'text-text-secondary hover:bg-gray-50 hover:text-text-primary'
                                             }`}
                                             onClick={() => setIsMobileMenuOpen(false)}

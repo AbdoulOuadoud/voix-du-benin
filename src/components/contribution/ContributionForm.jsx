@@ -179,9 +179,9 @@ export default function ContributionForm({
                             <div 
                                 className={`flex items-center justify-center w-10 h-10 rounded-full border-2 ${
                                     currentStep > index + 1
-                                        ? 'bg-benin-green border-benin-green text-white'
+                                        ? 'bg-vert-beninois  border-vert-beninois text-white'
                                         : currentStep === index + 1
-                                            ? 'border-benin-green text-benin-green'
+                                            ? 'border-vert-beninois text-benin-green'
                                             : 'border-gray-200 text-gray-400'
                                 }`}
                             >
@@ -190,7 +190,7 @@ export default function ContributionForm({
                             {index < totalSteps - 1 && (
                                 <div 
                                     className={`absolute top-5 left-10 w-[calc(100%-20px)] h-0.5 ${
-                                        currentStep > index + 1 ? 'bg-benin-green' : 'bg-gray-200'
+                                        currentStep > index + 1 ? 'bg-vert-beninois ' : 'bg-gray-200'
                                     }`}
                                 />
                             )}
