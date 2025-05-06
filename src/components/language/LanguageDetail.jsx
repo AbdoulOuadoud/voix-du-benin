@@ -125,7 +125,7 @@ export default function LanguageDetail({ language, recordings = [], isLoading = 
                 </div>
             </div>
             
-            {/* Onglets d'information (optionnels) */}
+            {/* Onglets d&apos;information (optionnels) */}
             <div className="flex border-b border-gray-200 mb-6">
                 <button className="px-4 py-2 border-b-2 border-benin-green text-benin-green font-medium">
                     Enregistrements

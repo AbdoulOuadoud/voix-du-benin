@@ -17,7 +17,7 @@ export default function Navbar() {
             const scrollPosition = window.scrollY;
             setIsScrolled(scrollPosition > 10);
             
-            // Calculer une valeur d'opacité progressive basée sur le défilement
+            // Calculer une valeur d&apos;opacité progressive basée sur le défilement
             // Jusqu'à 200px de défilement pour une transition complète
             const progress = Math.min(scrollPosition / 200, 1);
             setScrollProgress(progress);
@@ -32,7 +32,7 @@ export default function Navbar() {
     // Calculer les styles dynamiques basés sur le défilement
     const glassOpacity = 0.6 + (scrollProgress * 0.3); // Opacité entre 60% et 90%
     const blurStrength = 8 + (scrollProgress * 8); // Flou entre 8px et 16px
-    const borderOpacity = 0.08 + (scrollProgress * 0.08); // Bordure entre 8% et 16% d'opacité
+    const borderOpacity = 0.08 + (scrollProgress * 0.08); // Bordure entre 8% et 16% d&apos;opacité
     
     return (
         <header 
@@ -76,11 +76,11 @@ export default function Navbar() {
                     </div>
                     
                     <div className="flex gap-3">
-                        <Button href="/auth/login" variant="outline" size="sm">
+                        <Button href="/login" variant="outline" size="sm">
                             Connexion
                         </Button>
-                        <Button href="/auth/sign-up" variant="primary" size="sm">
-                            S'inscrire
+                        <Button href="/register" variant="primary" size="sm">
+                            s&apos;inscrire
                         </Button>
                     </div>
                 </nav>
@@ -128,7 +128,7 @@ export default function Navbar() {
                             
                             <div className="flex flex-col gap-2 pt-1.5">
                                 <Button 
-                                    href="/auth/login" 
+                                    href="/login" 
                                     variant="outline" 
                                     size="sm"
                                     className="w-full justify-center"
@@ -137,13 +137,13 @@ export default function Navbar() {
                                     Connexion
                                 </Button>
                                 <Button 
-                                    href="/auth/sign-up" 
+                                    href="/register" 
                                     variant="primary" 
                                     size="sm"
                                     className="w-full justify-center"
                                     onClick={() => setIsMenuOpen(false)}
                                 >
-                                    S'inscrire
+                                    s&apos;inscrire
                                 </Button>
                             </div>
                         </nav>

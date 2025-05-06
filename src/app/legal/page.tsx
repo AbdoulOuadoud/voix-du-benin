@@ -21,7 +21,7 @@ export default function LegalPage() {
                 <section className="mb-10">
                     <h2 className="text-2xl font-semibold text-slate-800 mb-4">1. Éditeur du site</h2>
                     <p className="mb-4">
-                        Le site Voix du Bénin est édité par l'Association pour la Préservation des Langues Béninoises (APLB),
+                        Le site Voix du Bénin est édité par l&apos;Association pour la Préservation des Langues Béninoises (APLB),
                         association à but non lucratif dont le siège social est situé à :
                     </p>
                     <address className="not-italic mb-4">
@@ -49,13 +49,13 @@ export default function LegalPage() {
                 <section className="mb-10">
                     <h2 className="text-2xl font-semibold text-slate-800 mb-4">3. Propriété intellectuelle</h2>
                     <p className="mb-4">
-                        La structure générale, les textes, images, sons, vidéos, bases de données, logos et tous les éléments composant le site Voix du Bénin sont la propriété exclusive de l'Association pour la Préservation des Langues Béninoises ou font l'objet d'une autorisation d'utilisation.
+                        La structure générale, les textes, images, sons, vidéos, bases de données, logos et tous les éléments composant le site Voix du Bénin sont la propriété exclusive de l&apos;Association pour la Préservation des Langues Béninoises ou font l&apos;objet d&apos;une autorisation d&apos;utilisation.
                     </p>
                     <p className="mb-4">
-                        Toute représentation totale ou partielle du site Voix du Bénin, par quelque procédé que ce soit, sans l'autorisation expresse de l'Association pour la Préservation des Langues Béninoises, est interdite et constituerait une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la propriété intellectuelle.
+                        Toute représentation totale ou partielle du site Voix du Bénin, par quelque procédé que ce soit, sans l&apos;autorisation expresse de l&apos;Association pour la Préservation des Langues Béninoises, est interdite et constituerait une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la propriété intellectuelle.
                     </p>
                     <p>
-                        Les marques, logos et noms de domaine apparaissant sur le site sont la propriété exclusive de l'Association pour la Préservation des Langues Béninoises. Toute reproduction ou utilisation de ces marques, logos ou noms de domaine, de quelque manière que ce soit, est interdite sans l'autorisation préalable et écrite de l'Association.
+                        Les marques, logos et noms de domaine apparaissant sur le site sont la propriété exclusive de l&apos;Association pour la Préservation des Langues Béninoises. Toute reproduction ou utilisation de ces marques, logos ou noms de domaine, de quelque manière que ce soit, est interdite sans l&apos;autorisation préalable et écrite de l&apos;Association.
                     </p>
                 </section>
 
@@ -65,47 +65,47 @@ export default function LegalPage() {
                         Les contributions linguistiques (enregistrements audio, transcriptions, traductions) soumises par les utilisateurs à la plateforme Voix du Bénin sont publiées sous licence Creative Commons Attribution 4.0 International (CC BY 4.0), sauf mention contraire spécifiée par le contributeur lors de la soumission.
                     </p>
                     <p className="mb-4">
-                        Cette licence permet à d'autres de distribuer, remixer, adapter et développer votre travail, même à des fins commerciales, tant qu'ils vous créditent pour la création originale.
+                        Cette licence permet à d&apos;autres de distribuer, remixer, adapter et développer votre travail, même à des fins commerciales, tant qu&apos;ils vous créditent pour la création originale.
                     </p>
                     <p>
-                        Pour plus d'informations sur cette licence, veuillez consulter : <a href="https://creativecommons.org/licenses/by/4.0/" className="text-benin-green hover:underline" target="_blank" rel="noreferrer">Creative Commons CC BY 4.0</a>
+                        Pour plus d&apos;informations sur cette licence, veuillez consulter : <a href="https://creativecommons.org/licenses/by/4.0/" className="text-benin-green hover:underline" target="_blank" rel="noreferrer">Creative Commons CC BY 4.0</a>
                     </p>
                 </section>
 
                 <section className="mb-10">
                     <h2 className="text-2xl font-semibold text-slate-800 mb-4">5. Protection des données personnelles</h2>
                     <p className="mb-4">
-                        Conformément à la loi n° 2017-20 du 20 avril 2018 portant code du numérique en République du Bénin, vous disposez d'un droit d'accès, de modification, de rectification et de suppression des données qui vous concernent.
+                        Conformément à la loi n° 2017-20 du 20 avril 2018 portant code du numérique en République du Bénin, vous disposez d&apos;un droit d&apos;accès, de modification, de rectification et de suppression des données qui vous concernent.
                     </p>
                     <p className="mb-4">
-                        Pour exercer ce droit, veuillez nous contacter à l'adresse suivante : privacy@voixdubenin.org
+                        Pour exercer ce droit, veuillez nous contacter à l&apos;adresse suivante : privacy@voixdubenin.org
                     </p>
                     <p>
-                        Pour plus d'informations concernant la gestion de vos données personnelles, veuillez consulter notre <a href="/privacy-policy" className="text-benin-green hover:underline">Politique de confidentialité</a>.
+                        Pour plus d&apos;informations concernant la gestion de vos données personnelles, veuillez consulter notre <a href="/privacy-policy" className="text-benin-green hover:underline">Politique de confidentialité</a>.
                     </p>
                 </section>
 
                 <section className="mb-10">
                     <h2 className="text-2xl font-semibold text-slate-800 mb-4">6. Cookies</h2>
                     <p className="mb-4">
-                        Le site Voix du Bénin utilise des cookies pour améliorer l'expérience utilisateur. En naviguant sur notre site, vous acceptez l'utilisation de cookies conformément à notre politique de confidentialité.
+                        Le site Voix du Bénin utilise des cookies pour améliorer l&apos;expérience utilisateur. En naviguant sur notre site, vous acceptez l&apos;utilisation de cookies conformément à notre politique de confidentialité.
                     </p>
                     <p>
-                        La plupart des navigateurs permettent de refuser les cookies. Pour plus d'informations sur les cookies et comment les gérer, consultez notre <a href="/privacy-policy" className="text-benin-green hover:underline">Politique de confidentialité</a>.
+                        La plupart des navigateurs permettent de refuser les cookies. Pour plus d&apos;informations sur les cookies et comment les gérer, consultez notre <a href="/privacy-policy" className="text-benin-green hover:underline">Politique de confidentialité</a>.
                     </p>
                 </section>
 
                 <section className="mb-10">
                     <h2 className="text-2xl font-semibold text-slate-800 mb-4">7. Limitation de responsabilité</h2>
                     <p className="mb-4">
-                        L'Association pour la Préservation des Langues Béninoises s'efforce d'assurer au mieux de ses possibilités l'exactitude et la mise à jour des informations diffusées sur le site Voix du Bénin, dont elle se réserve le droit de modifier, à tout moment et sans préavis, le contenu ou la présentation.
+                        l&apos;Association pour la Préservation des Langues Béninoises s&apos;efforce d&apos;assurer au mieux de ses possibilités l&apos;exactitude et la mise à jour des informations diffusées sur le site Voix du Bénin, dont elle se réserve le droit de modifier, à tout moment et sans préavis, le contenu ou la présentation.
                     </p>
                     <p className="mb-4">
-                        Toutefois, elle ne peut garantir l'exactitude, la précision ou l'exhaustivité des informations mises à disposition sur le site. En conséquence, l'Association pour la Préservation des Langues Béninoises décline toute responsabilité :
+                        Toutefois, elle ne peut garantir l&apos;exactitude, la précision ou l&apos;exhaustivité des informations mises à disposition sur le site. En conséquence, l&apos;Association pour la Préservation des Langues Béninoises décline toute responsabilité :
                     </p>
                     <ul className="list-disc pl-6 mb-4">
                         <li>Pour toute imprécision, inexactitude ou omission portant sur des informations disponibles sur le site</li>
-                        <li>Pour tous dommages, directs et/ou indirects, quelles qu'en soient les causes, origines, natures ou conséquences, résultant de l'utilisation du site ou de l'impossibilité d'y accéder</li>
+                        <li>Pour tous dommages, directs et/ou indirects, quelles qu&apos;en soient les causes, origines, natures ou conséquences, résultant de l&apos;utilisation du site ou de l&apos;impossibilité d&apos;y accéder</li>
                         <li>Pour tout contenu provenant de sites tiers auxquels le site Voix du Bénin renvoie</li>
                     </ul>
                 </section>
@@ -113,24 +113,24 @@ export default function LegalPage() {
                 <section className="mb-10">
                     <h2 className="text-2xl font-semibold text-slate-800 mb-4">8. Liens hypertextes</h2>
                     <p className="mb-4">
-                        Le site Voix du Bénin peut contenir des liens hypertextes vers d'autres sites présents sur le réseau Internet. Les liens vers ces autres sites vous font quitter le site Voix du Bénin.
+                        Le site Voix du Bénin peut contenir des liens hypertextes vers d&apos;autres sites présents sur le réseau Internet. Les liens vers ces autres sites vous font quitter le site Voix du Bénin.
                     </p>
                     <p>
-                        L'Association pour la Préservation des Langues Béninoises n'accepte aucune responsabilité quant au contenu des sites ainsi consultés et aux éventuels préjudices qui pourraient résulter de leur consultation.
+                        l&apos;Association pour la Préservation des Langues Béninoises n&apos;accepte aucune responsabilité quant au contenu des sites ainsi consultés et aux éventuels préjudices qui pourraient résulter de leur consultation.
                     </p>
                 </section>
 
                 <section className="mb-10">
                     <h2 className="text-2xl font-semibold text-slate-800 mb-4">9. Droit applicable et juridiction compétente</h2>
                     <p className="mb-4">
-                        Les présentes mentions légales sont régies par le droit béninois. En cas de différend et à défaut d'accord amiable, le litige sera porté devant les tribunaux béninois conformément aux règles de compétence en vigueur.
+                        Les présentes mentions légales sont régies par le droit béninois. En cas de différend et à défaut d&apos;accord amiable, le litige sera porté devant les tribunaux béninois conformément aux règles de compétence en vigueur.
                     </p>
                 </section>
 
                 <section className="mb-10">
                     <h2 className="text-2xl font-semibold text-slate-800 mb-4">10. Contact</h2>
                     <p className="mb-4">
-                        Pour toute question concernant les présentes mentions légales ou pour signaler un problème technique, vous pouvez nous contacter à l'adresse suivante :
+                        Pour toute question concernant les présentes mentions légales ou pour signaler un problème technique, vous pouvez nous contacter à l&apos;adresse suivante :
                     </p>
                     <p>Email : <a href="mailto:legal@voixdubenin.org" className="text-benin-green hover:underline">legal@voixdubenin.org</a></p>
                 </section>

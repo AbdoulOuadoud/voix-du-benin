@@ -41,7 +41,7 @@ export default function FeaturesSection() {
             icon: <BarChart3 size={64} className="text-vert-beninois" />,
             badge: "Statistiques",
             title: "Voir vos contributions",
-            description: "Suivez l'ensemble de vos contributions et leur impact sur la préservation des langues béninoises.",
+            description: "Suivez l&apos;ensemble de vos contributions et leur impact sur la préservation des langues béninoises.",
             link: "/profile/contributions",
             linkText: "Voir mon profil"
         },

@@ -105,7 +105,7 @@ export default function CtaSection() {
                                 transition={{ duration: 0.5, delay: 0.4 }}
                             >
                                 <div className="relative">
-                                    {/* Illustration d'une carte du Bénin stylisée avec des ondes sonores */}
+                                    {/* Illustration d&apos;une carte du Bénin stylisée avec des ondes sonores */}
                                     <div className="aspect-square max-w-md mx-auto rounded-3xl p-5" style={{ backgroundColor: 'rgba(255, 255, 255, 0.15)', backdropFilter: 'blur(4px)' }}>
                                         <div className="h-full rounded-2xl border-2 border-white/30 flex items-center justify-center">
                                             <svg width="180" height="220" viewBox="0 0 180 220" fill="none" xmlns="http://www.w3.org/2000/svg" className="opacity-90">

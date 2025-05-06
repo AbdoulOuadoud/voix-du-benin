@@ -34,7 +34,7 @@ export default function Alert({
         if (onClose) onClose();
     };
 
-    // Configuration des styles selon le type d'alerte
+    // Configuration des styles selon le type d&apos;alerte
     const getAlertStyles = () => {
         switch (type) {
             case 'success':

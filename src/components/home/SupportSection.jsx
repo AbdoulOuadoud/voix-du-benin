@@ -23,7 +23,7 @@ export default function SupportSection() {
         {
             icon: <Handshake size={28} className="text-vert-beninois" />,
             title: "Devenir partenaire",
-            description: "Établissez un partenariat avec nous en tant qu'institution, association ou établissement scolaire.",
+            description: "Établissez un partenariat avec nous en tant qu&apos;institution, association ou établissement scolaire.",
             action: "Contacter",
             link: "/partner"
         },

@@ -96,7 +96,7 @@ export default function AudioPlayer({
         audioRef.current.currentTime = value;
     };
     
-    // Télécharger l'audio
+    // Télécharger l&apos;audio
     const handleDownload = () => {
         const link = document.createElement('a');
         link.href = audioUrl;
@@ -106,7 +106,7 @@ export default function AudioPlayer({
         document.body.removeChild(link);
     };
     
-    // Partager l'audio (utilise l'API Web Share si disponible)
+    // Partager l&apos;audio (utilise l&apos;API Web Share si disponible)
     const handleShare = async () => {
         if (navigator.share) {
             try {
@@ -129,7 +129,7 @@ export default function AudioPlayer({
         <div className={`bg-white rounded-xl p-4 shadow-custom ${className}`}>
             <audio ref={audioRef} src={audioUrl} preload="metadata" />
             
-            {/* Informations sur l'audio */}
+            {/* Informations sur l&apos;audio */}
             {(title || subtitle) && (
                 <div className="mb-4">
                     {title && <h4 className="font-medium text-text-primary">{title}</h4>}

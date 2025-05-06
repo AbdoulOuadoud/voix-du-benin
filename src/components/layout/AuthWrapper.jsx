@@ -4,7 +4,7 @@ import { useState, useEffect, createContext, useContext } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import { Loader2 } from 'lucide-react';
 
-// Création du contexte d'authentification
+// Création du contexte d&apos;authentification
 export const AuthContext = createContext({
     user: null,
     isLoading: true,
@@ -15,7 +15,7 @@ export const AuthContext = createContext({
     updateUser: () => {}
 });
 
-// Hook personnalisé pour utiliser le contexte d'authentification
+// Hook personnalisé pour utiliser le contexte d&apos;authentification
 export const useAuth = () => useContext(AuthContext);
 
 export default function AuthWrapper({ children }) {
@@ -24,10 +24,10 @@ export default function AuthWrapper({ children }) {
     const router = useRouter();
     const pathname = usePathname();
     
-    // Vérifier si l'utilisateur est authentifié
+    // Vérifier si l&apos;utilisateur est authentifié
     const isAuthenticated = !!user;
     
-    // Vérifier si l'utilisateur est admin
+    // Vérifier si l&apos;utilisateur est admin
     const isAdmin = user?.role === 'admin';
     
     // Vérifier si la page actuelle nécessite une authentification
@@ -40,8 +40,8 @@ export default function AuthWrapper({ children }) {
     useEffect(() => {
         const loadUser = async () => {
             try {
-                // Simulation d'un appel API pour récupérer l'utilisateur
-                // À remplacer par votre logique réelle d'authentification
+                // Simulation d&apos;un appel API pour récupérer l&apos;utilisateur
+                // À remplacer par votre logique réelle d&apos;authentification
                 const storedUser = localStorage.getItem('user');
                 
                 if (storedUser) {
@@ -57,15 +57,15 @@ export default function AuthWrapper({ children }) {
         loadUser();
     }, []);
     
-    // Rediriger l'utilisateur si nécessaire
+    // Rediriger l&apos;utilisateur si nécessaire
     useEffect(() => {
         if (!isLoading) {
-            // Redirection si l'utilisateur n'est pas authentifié
+            // Redirection si l&apos;utilisateur n&apos;est pas authentifié
             if (requiresAuth && !isAuthenticated) {
                 router.replace('/auth/sign-in?returnUrl=' + encodeURIComponent(pathname));
             }
             
-            // Redirection si l'utilisateur n'est pas administrateur
+            // Redirection si l&apos;utilisateur n&apos;est pas administrateur
             if (requiresAdmin && !isAdmin) {
                 router.replace('/dashboard');
             }
@@ -77,8 +77,8 @@ export default function AuthWrapper({ children }) {
         setIsLoading(true);
         
         try {
-            // Simulation d'un appel API pour l'authentification
-            // À remplacer par votre logique réelle d'authentification
+            // Simulation d&apos;un appel API pour l&apos;authentification
+            // À remplacer par votre logique réelle d&apos;authentification
             const mockUser = {
                 id: '123',
                 name: 'Utilisateur Test',
@@ -125,7 +125,7 @@ export default function AuthWrapper({ children }) {
         );
     }
     
-    // Fournir le contexte d'authentification à l'application
+    // Fournir le contexte d&apos;authentification à l&apos;application
     return (
         <AuthContext.Provider
             value={{

@@ -10,15 +10,15 @@ export default function FaqSection() {
     const faqItems = [
         {
             question: "Comment puis-je contribuer au projet Voix du Bénin ?",
-            answer: "Vous pouvez contribuer en enregistrant votre voix dans votre langue maternelle ou une langue que vous maîtrisez. Il suffit de visiter la page 'Contribuer', de sélectionner une langue, d'enregistrer une phrase ou une expression, et de soumettre votre contribution. Vous pouvez contribuer anonymement ou créer un compte pour suivre vos contributions."
+            answer: "Vous pouvez contribuer en enregistrant votre voix dans votre langue maternelle ou une langue que vous maîtrisez. Il suffit de visiter la page 'Contribuer', de sélectionner une langue, d&apos;enregistrer une phrase ou une expression, et de soumettre votre contribution. Vous pouvez contribuer anonymement ou créer un compte pour suivre vos contributions."
         },
         {
             question: "Quelles langues sont disponibles sur la plateforme ?",
-            answer: "Notre plateforme vise à couvrir toutes les langues et dialectes parlés au Bénin, y compris le Fon, le Yoruba, le Bariba, le Dendi, le Mina et bien d'autres. Si votre langue n'est pas encore répertoriée, vous pouvez nous aider à l'ajouter en la proposant via le formulaire de contribution."
+            answer: "Notre plateforme vise à couvrir toutes les langues et dialectes parlés au Bénin, y compris le Fon, le Yoruba, le Bariba, le Dendi, le Mina et bien d&apos;autres. Si votre langue n&apos;est pas encore répertoriée, vous pouvez nous aider à l&apos;ajouter en la proposant via le formulaire de contribution."
         },
         {
             question: "Comment sont utilisés les enregistrements audio ?",
-            answer: "Les enregistrements audio sont utilisés à des fins éducatives et de préservation culturelle. Ils sont mis à disposition gratuitement pour permettre aux personnes intéressées d'apprendre les langues béninoises et de découvrir la richesse de notre patrimoine linguistique. Les données sont également utilisées pour la recherche linguistique et le développement d'outils numériques adaptés aux langues africaines."
+            answer: "Les enregistrements audio sont utilisés à des fins éducatives et de préservation culturelle. Ils sont mis à disposition gratuitement pour permettre aux personnes intéressées d&apos;apprendre les langues béninoises et de découvrir la richesse de notre patrimoine linguistique. Les données sont également utilisées pour la recherche linguistique et le développement d&apos;outils numériques adaptés aux langues africaines."
         },
         {
             question: "Puis-je utiliser les ressources de Voix du Bénin dans mon projet ?",

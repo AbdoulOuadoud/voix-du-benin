@@ -18,7 +18,7 @@ export default function AudioRecorder({ onRecordingComplete }) {
     const audioRef = useRef(null);
     const timerRef = useRef(null);
 
-    // Effets pour gérer le timer d'enregistrement
+    // Effets pour gérer le timer d&apos;enregistrement
     useEffect(() => {
         if (isRecording) {
             timerRef.current = setInterval(() => {
@@ -35,7 +35,7 @@ export default function AudioRecorder({ onRecordingComplete }) {
         };
     }, [isRecording]);
 
-    // Effets pour gérer l'audio player
+    // Effets pour gérer l&apos;audio player
     useEffect(() => {
         if (audioRef.current) {
             const handleEnded = () => setIsPlaying(false);
@@ -46,14 +46,14 @@ export default function AudioRecorder({ onRecordingComplete }) {
         }
     }, [audioBlobUrl]);
 
-    // Formater le temps d'enregistrement
+    // Formater le temps d&apos;enregistrement
     const formatTime = (timeInSeconds) => {
         const minutes = Math.floor(timeInSeconds / 60);
         const seconds = timeInSeconds % 60;
         return `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
     };
 
-    // Démarrer l'enregistrement
+    // Démarrer l&apos;enregistrement
     const startRecording = async () => {
         try {
             setError(null);
@@ -86,11 +86,11 @@ export default function AudioRecorder({ onRecordingComplete }) {
             
         } catch (err) {
             console.error('Erreur lors de l\'enregistrement :', err);
-            setError("Impossible d'accéder au microphone. Veuillez vérifier les permissions.");
+            setError("Impossible d&apos;accéder au microphone. Veuillez vérifier les permissions.");
         }
     };
 
-    // Arrêter l'enregistrement
+    // Arrêter l&apos;enregistrement
     const stopRecording = () => {
         if (mediaRecorderRef.current && isRecording) {
             mediaRecorderRef.current.stop();
@@ -110,7 +110,7 @@ export default function AudioRecorder({ onRecordingComplete }) {
         }
     };
 
-    // Réinitialiser l'enregistrement
+    // Réinitialiser l&apos;enregistrement
     const resetRecording = () => {
         setAudioBlobUrl(null);
         setAudioBlob(null);
@@ -118,7 +118,7 @@ export default function AudioRecorder({ onRecordingComplete }) {
         setIsPlaying(false);
     };
 
-    // Envoyer l'enregistrement
+    // Envoyer l&apos;enregistrement
     const submitRecording = () => {
         if (audioBlob && onRecordingComplete) {
             onRecordingComplete(audioBlob);
@@ -132,7 +132,7 @@ export default function AudioRecorder({ onRecordingComplete }) {
                 Enregistrement audio
             </h3>
             <p className="text-text-secondary mb-6">
-                Parlez clairement et à une distance d'environ 20 cm du microphone.
+                Parlez clairement et à une distance d&apos;environ 20 cm du microphone.
             </p>
 
             {/* Visualisation */}
@@ -173,7 +173,7 @@ export default function AudioRecorder({ onRecordingComplete }) {
                     <div className="text-center">
                         <Mic className="w-12 h-12 text-gray-400 mx-auto mb-2" />
                         <p className="text-text-secondary">
-                            Appuyez sur le bouton d'enregistrement pour commencer
+                            Appuyez sur le bouton d&apos;enregistrement pour commencer
                         </p>
                     </div>
                 )}
@@ -186,7 +186,7 @@ export default function AudioRecorder({ onRecordingComplete }) {
                 </span>
             </div>
 
-            {/* Message d'erreur */}
+            {/* Message d&apos;erreur */}
             {error && (
                 <div className="bg-red-50 text-red-600 p-3 rounded-lg mb-4 flex items-center gap-2">
                     <AlertCircle size={18} />
@@ -202,7 +202,7 @@ export default function AudioRecorder({ onRecordingComplete }) {
                         className="bg-benin-red text-white"
                     >
                         <Mic size={18} />
-                        Commencer l'enregistrement
+                        Commencer l&apos;enregistrement
                     </Button>
                 )}
 

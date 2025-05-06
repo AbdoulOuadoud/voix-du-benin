@@ -73,7 +73,7 @@ export default function AboutSection() {
                     </h2>
                     <p className="text-slate-600 text-lg leading-relaxed">
                         Voix du Bénin préserve et valorise les langues de notre territoire, 
-                        témoins de notre héritage culturel et vecteurs d'identité pour l'avenir.
+                        témoins de notre héritage culturel et vecteurs d&apos;identité pour l&apos;avenir.
                     </p>
                 </motion.div>
 
@@ -106,7 +106,7 @@ export default function AboutSection() {
                         <div className="space-y-4">
                             <h3 className="text-xl font-semibold text-slate-800">Le défi actuel</h3>
                             <p className="text-slate-600">
-                                Face à la mondialisation, de nombreuses langues béninoises sont menacées d'extinction. 
+                                Face à la mondialisation, de nombreuses langues béninoises sont menacées d&apos;extinction. 
                                 Cette richesse culturelle unique risque de disparaître sans documentation adéquate.
                             </p>
                         </div>

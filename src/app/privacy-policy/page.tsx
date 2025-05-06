@@ -33,11 +33,11 @@ export default function PrivacyPolicy() {
 
                 <section className="mb-10">
                     <h2 className="text-2xl font-semibold text-slate-800 mb-4">2. Informations que nous collectons</h2>
-                    <p className="mb-4">Nous pouvons collecter les types d'informations suivants :</p>
+                    <p className="mb-4">Nous pouvons collecter les types d&apos;informations suivants :</p>
 
                     <h3 className="text-xl font-medium text-slate-800 mb-2">2.1. Informations que vous nous fournissez</h3>
                     <ul className="list-disc pl-6 mb-4">
-                        <li>Informations de compte : nom, prénom, adresse e-mail, mot de passe lors de la création d'un compte.</li>
+                        <li>Informations de compte : nom, prénom, adresse e-mail, mot de passe lors de la création d&apos;un compte.</li>
                         <li>Profil utilisateur : informations démographiques, langues parlées, niveau de compétence linguistique.</li>
                         <li>Contributions : enregistrements audio, transcriptions, traductions et annotations linguistiques.</li>
                         <li>Communications : messages envoyés via nos formulaires de contact ou correspondance avec notre équipe.</li>
@@ -45,9 +45,9 @@ export default function PrivacyPolicy() {
 
                     <h3 className="text-xl font-medium text-slate-800 mb-2">2.2. Informations collectées automatiquement</h3>
                     <ul className="list-disc pl-6 mb-4">
-                        <li>Données d'utilisation : pages visitées, durée des sessions, actions effectuées sur la plateforme.</li>
-                        <li>Informations techniques : adresse IP, type d'appareil, navigateur, système d'exploitation.</li>
-                        <li>Cookies et technologies similaires : pour améliorer votre expérience et analyser l'utilisation de notre service.</li>
+                        <li>Données d&apos;utilisation : pages visitées, durée des sessions, actions effectuées sur la plateforme.</li>
+                        <li>Informations techniques : adresse IP, type d&apos;appareil, navigateur, système d&apos;exploitation.</li>
+                        <li>Cookies et technologies similaires : pour améliorer votre expérience et analyser l&apos;utilisation de notre service.</li>
                     </ul>
                 </section>
 
@@ -58,9 +58,9 @@ export default function PrivacyPolicy() {
                         <li>Fournir, maintenir et améliorer notre plateforme de préservation linguistique.</li>
                         <li>Traiter et gérer votre compte et vos contributions.</li>
                         <li>Développer de nouvelles fonctionnalités et services.</li>
-                        <li>Analyser l'utilisation de notre plateforme et améliorer l'expérience utilisateur.</li>
+                        <li>Analyser l&apos;utilisation de notre plateforme et améliorer l&apos;expérience utilisateur.</li>
                         <li>Communiquer avec vous concernant votre compte, vos contributions ou nos services.</li>
-                        <li>Protéger la sécurité et l'intégrité de notre plateforme.</li>
+                        <li>Protéger la sécurité et l&apos;intégrité de notre plateforme.</li>
                         <li>Se conformer aux obligations légales.</li>
                     </ul>
                 </section>
@@ -69,20 +69,20 @@ export default function PrivacyPolicy() {
                     <h2 className="text-2xl font-semibold text-slate-800 mb-4">4. Partage de vos informations</h2>
                     <p className="mb-4">Nous pouvons partager vos informations dans les circonstances suivantes :</p>
                     <ul className="list-disc pl-6 mb-4">
-                        <li><strong>Contributions publiques</strong> : Les enregistrements audio, transcriptions et autres contributions que vous choisissez de rendre publics seront accessibles aux autres utilisateurs de la plateforme et pourront être utilisés à des fins d'étude et de préservation des langues béninoises.</li>
+                        <li><strong>Contributions publiques</strong> : Les enregistrements audio, transcriptions et autres contributions que vous choisissez de rendre publics seront accessibles aux autres utilisateurs de la plateforme et pourront être utilisés à des fins d&apos;étude et de préservation des langues béninoises.</li>
                         <li><strong>Partenaires de recherche</strong> : Nous pouvons partager des données anonymisées avec des instituts de recherche linguistique, des universités ou des organismes culturels pour soutenir la recherche sur les langues béninoises.</li>
                         <li><strong>Prestataires de services</strong> : Nous collaborons avec des fournisseurs tiers qui nous aident à exploiter notre plateforme (hébergement, analyse de données, services de paiement).</li>
-                        <li><strong>Obligations légales</strong> : Nous pouvons divulguer vos informations si la loi l'exige ou en réponse à des demandes légitimes des autorités publiques.</li>
+                        <li><strong>Obligations légales</strong> : Nous pouvons divulguer vos informations si la loi l&apos;exige ou en réponse à des demandes légitimes des autorités publiques.</li>
                     </ul>
                 </section>
 
                 <section className="mb-10">
                     <h2 className="text-2xl font-semibold text-slate-800 mb-4">5. Protection de vos informations</h2>
                     <p className="mb-4">
-                        Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles pour protéger vos données personnelles contre tout accès non autorisé, perte, utilisation abusive ou altération. Ces mesures incluent le chiffrement des données, l'accès restreint aux informations personnelles, et des audits réguliers de nos pratiques de sécurité.
+                        Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles pour protéger vos données personnelles contre tout accès non autorisé, perte, utilisation abusive ou altération. Ces mesures incluent le chiffrement des données, l&apos;accès restreint aux informations personnelles, et des audits réguliers de nos pratiques de sécurité.
                     </p>
                     <p>
-                        Toutefois, aucune méthode de transmission sur Internet ou de stockage électronique n'est totalement sûre. Nous ne pouvons donc pas garantir une sécurité absolue.
+                        Toutefois, aucune méthode de transmission sur Internet ou de stockage électronique n&apos;est totalement sûre. Nous ne pouvons donc pas garantir une sécurité absolue.
                     </p>
                 </section>
 
@@ -92,20 +92,20 @@ export default function PrivacyPolicy() {
                     <ul className="list-disc pl-6 mb-4">
                         <li>Accéder à vos données personnelles et en obtenir une copie.</li>
                         <li>Rectifier des informations inexactes ou incomplètes.</li>
-                        <li>Demander l'effacement de vos données dans certaines circonstances.</li>
+                        <li>Demander l&apos;effacement de vos données dans certaines circonstances.</li>
                         <li>Limiter ou vous opposer au traitement de vos données.</li>
                         <li>Retirer votre consentement à tout moment lorsque le traitement est basé sur celui-ci.</li>
-                        <li>Porter plainte auprès d'une autorité de protection des données.</li>
+                        <li>Porter plainte auprès d&apos;une autorité de protection des données.</li>
                     </ul>
                     <p>
-                        Pour exercer ces droits, veuillez nous contacter via l'adresse email : <a href="mailto:privacy@voixdubenin.org" className="text-benin-green hover:underline">privacy@voixdubenin.org</a>.
+                        Pour exercer ces droits, veuillez nous contacter via l&apos;adresse email : <a href="mailto:privacy@voixdubenin.org" className="text-benin-green hover:underline">privacy@voixdubenin.org</a>.
                     </p>
                 </section>
 
                 <section className="mb-10">
                     <h2 className="text-2xl font-semibold text-slate-800 mb-4">7. Conservation des données</h2>
                     <p className="mb-4">
-                        Nous conservons vos données personnelles aussi longtemps que nécessaire pour atteindre les objectifs décrits dans cette politique de confidentialité, à moins qu'une période de conservation plus longue ne soit requise ou permise par la loi.
+                        Nous conservons vos données personnelles aussi longtemps que nécessaire pour atteindre les objectifs décrits dans cette politique de confidentialité, à moins qu&apos;une période de conservation plus longue ne soit requise ou permise par la loi.
                     </p>
                     <p>
                         Les contributions linguistiques que vous partagez publiquement sur la plateforme peuvent être conservées indéfiniment pour servir notre mission de préservation du patrimoine linguistique béninois, sauf si vous demandez leur suppression.
@@ -115,14 +115,14 @@ export default function PrivacyPolicy() {
                 <section className="mb-10">
                     <h2 className="text-2xl font-semibold text-slate-800 mb-4">8. Politique concernant les enfants</h2>
                     <p className="mb-4">
-                        Notre service n'est pas destiné aux personnes âgées de moins de 16 ans. Nous ne collectons pas sciemment de données personnelles auprès d'enfants de moins de 16 ans. Si vous êtes parent ou tuteur et que vous savez que votre enfant nous a fourni des données personnelles, veuillez nous contacter afin que nous puissions prendre les mesures nécessaires.
+                        Notre service n&apos;est pas destiné aux personnes âgées de moins de 16 ans. Nous ne collectons pas sciemment de données personnelles auprès d&apos;enfants de moins de 16 ans. Si vous êtes parent ou tuteur et que vous savez que votre enfant nous a fourni des données personnelles, veuillez nous contacter afin que nous puissions prendre les mesures nécessaires.
                     </p>
                 </section>
 
                 <section className="mb-10">
                     <h2 className="text-2xl font-semibold text-slate-800 mb-4">9. Modifications de cette politique</h2>
                     <p className="mb-4">
-                        Nous pouvons mettre à jour cette politique de confidentialité périodiquement pour refléter les changements dans nos pratiques ou pour d'autres raisons opérationnelles, légales ou réglementaires. Nous vous encourageons à consulter régulièrement cette page pour prendre connaissance des dernières informations sur nos pratiques de confidentialité.
+                        Nous pouvons mettre à jour cette politique de confidentialité périodiquement pour refléter les changements dans nos pratiques ou pour d&apos;autres raisons opérationnelles, légales ou réglementaires. Nous vous encourageons à consulter régulièrement cette page pour prendre connaissance des dernières informations sur nos pratiques de confidentialité.
                     </p>
                     <p>
                         En cas de modifications importantes, nous vous en informerons par e-mail ou par un avis sur notre site web avant que ces modifications ne deviennent effectives.

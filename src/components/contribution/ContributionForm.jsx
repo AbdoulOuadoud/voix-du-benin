@@ -68,7 +68,7 @@ export default function ContributionForm({
             }));
         }
         
-        // Effacer l'erreur correspondante
+        // Effacer l&apos;erreur correspondante
         if (errors[name]) {
             setErrors(prev => ({
                 ...prev,
@@ -77,14 +77,14 @@ export default function ContributionForm({
         }
     };
     
-    // Gérer l'enregistrement audio
+    // Gérer l&apos;enregistrement audio
     const handleRecordingComplete = (audioBlob) => {
         setFormData(prev => ({
             ...prev,
             audioBlob
         }));
         
-        // Effacer l'erreur correspondante
+        // Effacer l&apos;erreur correspondante
         if (errors.audioBlob) {
             setErrors(prev => ({
                 ...prev,
@@ -93,7 +93,7 @@ export default function ContributionForm({
         }
     };
     
-    // Valider le formulaire pour l'étape actuelle
+    // Valider le formulaire pour l&apos;étape actuelle
     const validateCurrentStep = () => {
         let stepErrors = {};
         let isValid = true;
@@ -135,7 +135,7 @@ export default function ContributionForm({
         return isValid;
     };
     
-    // Passer à l'étape suivante
+    // Passer à l&apos;étape suivante
     const goToNextStep = () => {
         if (validateCurrentStep()) {
             if (currentStep < totalSteps) {
@@ -144,7 +144,7 @@ export default function ContributionForm({
         }
     };
     
-    // Revenir à l'étape précédente
+    // Revenir à l&apos;étape précédente
     const goToPreviousStep = () => {
         if (currentStep > 1) {
             setCurrentStep(currentStep - 1);
@@ -168,7 +168,7 @@ export default function ContributionForm({
                 Contribuer à la préservation des langues du Bénin
             </h2>
             
-            {/* Indicateur d'étape */}
+            {/* Indicateur d&apos;étape */}
             <div className="mb-8">
                 <div className="flex justify-between">
                     {Array.from({ length: totalSteps }).map((_, index) => (
@@ -236,7 +236,7 @@ export default function ContributionForm({
                                         <Info size={18} className="text-benin-green mt-1 mr-2" />
                                         <p className="text-sm text-text-secondary">
                                             Vous ajoutez une nouvelle langue à notre base de données. 
-                                            Merci de fournir autant d'informations que possible.
+                                            Merci de fournir autant d&apos;informations que possible.
                                         </p>
                                     </div>
                                     
@@ -309,7 +309,7 @@ export default function ContributionForm({
                             <Input
                                 id="context"
                                 name="context"
-                                label="Contexte d'utilisation (optionnel)"
+                                label="Contexte d&apos;utilisation (optionnel)"
                                 value={formData.context}
                                 onChange={handleChange}
                                 placeholder="Dans quel contexte cette phrase est utilisée"

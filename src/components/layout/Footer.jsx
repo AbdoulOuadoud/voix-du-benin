@@ -96,7 +96,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link href="/terms-of-service" className="text-texte-secondaire hover:text-vert-beninois transition-colors">
-                                    Conditions d'utilisation
+                                    Conditions d&apos;utilisation
                                 </Link>
                             </li>
                         </ul>

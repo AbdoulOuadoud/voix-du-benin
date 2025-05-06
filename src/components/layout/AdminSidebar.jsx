@@ -89,7 +89,7 @@ export default function AdminSidebar() {
                         </span>
                     </Link>
                     <div className="mt-2 text-sm text-text-secondary">
-                        Panneau d'administration
+                        Panneau d&apos;administration
                     </div>
                 </div>
                 
@@ -144,7 +144,7 @@ export default function AdminSidebar() {
                                 </span>
                             </Link>
                             <div className="mt-2 text-sm text-text-secondary">
-                                Panneau d'administration
+                                Panneau d&apos;administration
                             </div>
                         </div>
                         

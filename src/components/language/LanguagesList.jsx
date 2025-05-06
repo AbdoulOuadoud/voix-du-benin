@@ -155,7 +155,7 @@ export default function LanguagesList({
                         Aucune langue ne correspond à vos critères de recherche.
                     </p>
                     <p className="text-text-secondary">
-                        Essayez de modifier vos filtres ou d'effectuer une nouvelle recherche.
+                        Essayez de modifier vos filtres ou d&apos;effectuer une nouvelle recherche.
                     </p>
                 </div>
             )}

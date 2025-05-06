@@ -20,7 +20,7 @@ export default function LanguageCard({
         colorAccent
     } = language;
 
-    // Couleur d'accent par défaut si non fournie
+    // Couleur d&apos;accent par défaut si non fournie
     const accentColor = colorAccent || 'bg-benin-green';
 
     return (
@@ -48,7 +48,7 @@ export default function LanguageCard({
                             </div>
                         )}
                         
-                        {/* Barre d'accent en haut */}
+                        {/* Barre d&apos;accent en haut */}
                         <div className={`absolute top-0 left-0 right-0 h-1 ${accentColor}`} />
                     </div>
                     
@@ -77,7 +77,7 @@ export default function LanguageCard({
                                 </div>
                             )}
                             
-                            {/* Nombre d'enregistrements */}
+                            {/* Nombre d&apos;enregistrements */}
                             {recordingsCount !== undefined && (
                                 <div className="flex items-center text-text-secondary">
                                     <Mic size={16} className="mr-2 flex-shrink-0" />
