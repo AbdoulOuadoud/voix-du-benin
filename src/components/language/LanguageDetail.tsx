@@ -279,13 +279,14 @@ export default function LanguageDetail({ language, recordings = [], isLoading = 
                     Votre voix compte ! Enregistrez des phrases, des mots ou des expressions
                     pour enrichir notre base de données et préserver ce patrimoine culturel.
                 </p>
-                <Button 
-                    href={`/contribute/${language.id}`} 
-                    variant="secondary" 
-                    size="lg"
-                >
-                    Faire un enregistrement
-                </Button>
+                <div className="flex justify-center">
+                    <Button 
+                        href={`/contribute/${language.id}`} 
+                        variant="secondary"
+                    >
+                        Faire un enregistrement
+                    </Button>
+                </div>
             </div>
         </div>
     );

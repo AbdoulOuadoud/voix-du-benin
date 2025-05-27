@@ -9,7 +9,6 @@ const mockLanguages = [
         speakersCount: 1700000,
         recordingsCount: 127,
         region: 'Centre et Sud du Bénin',
-        imageUrl: '/languages/fon.jpg',
         colorAccent: 'bg-vert-beninois ',
     },
     {
@@ -18,7 +17,6 @@ const mockLanguages = [
         speakersCount: 450000,
         recordingsCount: 84,
         region: 'Sud-Est du Bénin',
-        imageUrl: '/languages/yoruba.jpg',
         colorAccent: 'bg-benin-yellow',
     },
     {
@@ -27,7 +25,6 @@ const mockLanguages = [
         speakersCount: 320000,
         recordingsCount: 53,
         region: 'Nord du Bénin',
-        imageUrl: '/languages/dendi.jpg',
         colorAccent: 'bg-benin-red',
     },
     {
@@ -108,9 +105,9 @@ export default async function LanguagesPage() {
                 </h2>
                 <div className="max-w-4xl mx-auto">
                     <p className="text-texte-secondaire mb-4">
-                        Le Bénin est d'une richesse linguistique exceptionnelle avec plus de 50 langues
+                        Le Bénin est d&apos;une richesse linguistique exceptionnelle avec plus de 50 langues
                         parlées sur son territoire. Malgré le français comme langue officielle, les
-                        langues nationales sont essentielles à la vie quotidienne et à l'identité culturelle.
+                        langues nationales sont essentielles à la vie quotidienne et à l&apos;identité culturelle.
                     </p>
                     <p className="text-texte-secondaire mb-4">
                         Certaines de ces langues sont menacées et risquent de disparaître dans les prochaines
