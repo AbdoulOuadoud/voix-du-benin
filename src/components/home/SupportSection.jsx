@@ -112,7 +112,7 @@ export default function SupportSection() {
                     transition={{ duration: 0.5 }}
                 >
                     <Button 
-                        href="/support" 
+                        href="/support#formulaire" 
                         variant="primary" 
                         size="lg"
                         className="inline-flex items-center gap-2"
