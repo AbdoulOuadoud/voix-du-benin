@@ -1,5 +1,3 @@
-import { Suspense } from 'react';
-
 export const metadata = {
     title: 'Contributions | Voix du Bénin',
     description: 'Suivez vos contributions et l\'impact de la communauté dans la préservation des langues du Bénin.',

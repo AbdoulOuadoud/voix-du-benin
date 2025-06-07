@@ -1,43 +1,10 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { Heart, ArrowLeft, Users, Globe, BookOpen, Award, Gift, Handshake, Share2, Code } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 
 export default function SupportPage() {
-    const impactStats = [
-        { icon: <Users size={20} />, number: "500+", label: "Contributeurs actifs" },
-        { icon: <Globe size={20} />, number: "15", label: "Langues documentées" },
-        { icon: <BookOpen size={20} />, number: "10k+", label: "Enregistrements audio" },
-        { icon: <Award size={20} />, number: "3", label: "Partenariats institutionnels" }
-    ];
-
-    const supportWays = [
-        {
-            icon: <Gift size={24} className="text-rouge-terre" />,
-            title: "Don financier",
-            description: "Soutenez financièrement nos activités de recherche, développement et maintenance.",
-            features: ["Déductible fiscalement", "Certificat de don", "Rapport annuel d'impact"]
-        },
-        {
-            icon: <Share2 size={24} className="text-jaune-sable" />,
-            title: "Partage et sensibilisation",
-            description: "Aidez-nous à faire connaître notre mission auprès de vos réseaux.",
-            features: ["Partage sur réseaux sociaux", "Recommandation à vos contacts", "Organisation d'événements"]
-        },
-        {
-            icon: <Handshake size={24} className="text-vert-beninois" />,
-            title: "Partenariat institutionnel",
-            description: "Établissez un partenariat durable avec votre organisation.",
-            features: ["Collaboration recherche", "Programmes éducatifs", "Échanges culturels"]
-        },
-        {
-            icon: <Code size={24} className="text-vert-beninois" />,
-            title: "Contribution technique",
-            description: "Mettez vos compétences au service de la préservation linguistique.",
-            features: ["Développement web", "Design UX/UI", "Traduction et transcription"]
-        }
-    ];
 
     return (
         <div className="min-h-screen bg-gray-50 pt-20">
@@ -59,7 +26,7 @@ export default function SupportPage() {
                                 className="inline-flex items-center gap-2 px-6 py-3 bg-vert-beninois text-white rounded-lg hover:bg-vert-beninois/90 transition-colors flex-shrink-0"
                             >
                                 <ArrowLeft size={16} />
-                                Retour à l'accueil
+                                Retour à l&lsquo;accueil
                             </Link>
                         </div>
                     </motion.div>
